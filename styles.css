@@ -1,1 +1,19 @@
 /*  your css code here. If applicable */
+
+.hide{
+    display: none;
+}
+
+.modal{
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.modal-content{
+    border: 1px solid grey;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
