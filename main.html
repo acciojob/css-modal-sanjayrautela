@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cssModal</title>
-    <link rel="stylesheet" href="style.css">
-    
+  <meta charset="UTF-8">
+  <title>Modal Example</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	
-    <button id="openModal">Open</button>
 
-    <div class="modal hide">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Modal Header</h2>
-                <button class="close-modal">Close</button>
-            </div>
-            <div class="modal-body">
-                <p>Modal Body Content</p>
-            </div>
-        </div>
+<button id="openModal">Open Modal</button>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Modal Header</h2>
+      <span class="close-modal">&times;</span>
     </div>
-	<script src="index.js" defer></script>
+    <div class="modal-body">
+      <p>Modal Body Content</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

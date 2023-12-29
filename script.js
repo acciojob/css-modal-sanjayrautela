@@ -1,17 +1,25 @@
-//your JS code here. If required.
-const openBtn = document.querySelector("#openModal")
-const closeBtn = document.querySelector(".close-modal")
-const modal = document.querySelector(".modal")
+// Get the modal
+var modal = document.getElementById('myModal');
 
-openBtn.addEventListener("click", ()=>{
-    modal.classList.remove("hide");
-    openBtn.classList.add("hide");
-})  
+// Get the button that opens the modal
+var btn = document.getElementById("openModal");
 
-const closeModal = ()=>{
-    modal.classList.add("hide");
-    openBtn.classList.remove("hide");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close-modal")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
 }
 
-closeBtn.addEventListener("click", closeModal);
-modal.addEventListener("click", closeModal);
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
